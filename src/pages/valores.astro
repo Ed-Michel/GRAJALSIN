@@ -1,0 +1,19 @@
+---
+import Lista from "../components/lista.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout paginaTitulo="| Valores" paginaDescripcion="Entre nuestros valores fundamentales se encuentran: respeto, honestidad, humanismo, etc. Estos principios guían nuestras acciones y decisiones, asegurando que operemos con integridad hacia nuestros clientes, empleados y la comunidad en general.">
+    <Lista
+        titulo="Valores"
+        elementos={[
+            "Respeto",
+            "Honestidad",
+            "Cultura del esfuerzo",
+            "Humanismo",
+            "Empatía",
+            "Espíritu emprendedor",
+            "Competencia perfecta",
+        ]}
+    />
+</Layout>

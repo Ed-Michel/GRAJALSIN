@@ -1,0 +1,19 @@
+---
+interface Props {
+    titulo: string;
+    elementos: string[];
+    imagenUrl?: string;
+}
+
+const { titulo, elementos, imagenUrl } = Astro.props;
+---
+
+<div>
+    <h2>{titulo}</h2>
+    <ul>
+        {elementos.map(item => (
+            <li>{item}</li>
+        ))}
+    </ul>
+    {imagenUrl && <img src={imagenUrl} alt={titulo} />}
+</div>

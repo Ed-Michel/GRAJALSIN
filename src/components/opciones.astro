@@ -1,0 +1,23 @@
+---
+interface Props {
+    titulo: string;
+    elementos: string[];
+    imagenUrl?: string;
+}
+
+const { titulo, elementos, imagenUrl } = Astro.props;
+---
+
+<div>
+    <h2>{titulo}</h2>
+    <ul>
+        {elementos.map(item => (
+            <li>
+                <a href={"/"+item.toLocaleLowerCase().substring(0, item.indexOf(' ')).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}>
+                    {item}
+                </a>
+            </li>
+        ))}
+    </ul>
+    {imagenUrl && <img src={imagenUrl} alt={titulo} />}
+</div>

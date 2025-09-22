@@ -1,0 +1,15 @@
+---
+interface Props {
+    titulo: string;
+    descripcion: string;
+    imagenUrl?: string;
+}
+
+const { titulo, descripcion, imagenUrl } = Astro.props;
+---
+
+<div class = "tarjeta">
+    <h2>{titulo}</h2>
+    <p set:html={descripcion}></p>
+    {imagenUrl && <img src={imagenUrl} alt={titulo} />}
+</div>

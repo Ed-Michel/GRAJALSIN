@@ -1,0 +1,36 @@
+---
+interface Props {
+    titulo: string;
+    tituloDos: string;
+    elementos: string[];
+    tituloTres: string;
+    elementosDos: string[];
+    tituloCuatro: string;
+    elementosTres: string[];    
+    imagenUrl?: string;
+}
+
+const { titulo, tituloDos, elementos, tituloTres, elementosDos, tituloCuatro, elementosTres, imagenUrl } = Astro.props;
+---
+
+<div>
+    <h2>{titulo}</h2>
+    <h3>{tituloDos}</h3>
+    <ul>
+        {elementos.map(item => (
+            <li>{item}</li>
+        ))}
+    </ul>
+    <h3>{tituloTres}</h3>
+    <ul>
+        {elementosDos.map(item => (
+            <li>{item}</li>
+        ))}
+    </ul>
+    <h3>{tituloCuatro}</h3>
+    <ul>
+        {elementosTres.map(item => (
+            <li>{item}</li>
+        ))}
+    {imagenUrl && <img src={imagenUrl} alt={titulo} />}
+</div>

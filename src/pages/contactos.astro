@@ -1,0 +1,22 @@
+---
+import Contacto from "../components/contactos.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout paginaTitulo="| Contactos" paginaDescripcion="Ponte en contacto con nosotros para cualquier consulta o información adicional sobre nuestros productos y servicios. Estamos aquí para ayudarte.">
+    <Contacto
+        titulo="Contáctanos"
+        tituloDos="Gerencia comercial"
+        elementos={[
+            "Celular: +52 667 142 6156",
+            "Correo: maria.arce@grajalsin.com",
+        ]}
+        tituloTres="Ventas de grano"
+        elementosDos={[
+            "Celular: +52 667 502 1709",
+            "Correo: karina.heraldez@grajalsin.com",
+        ]}
+        tituloCuatro="Oficina"
+        elementosTres={["Télefono: +52 667 455 7339"]}
+    />
+</Layout>

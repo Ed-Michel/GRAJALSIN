@@ -1,0 +1,20 @@
+---
+import Lista from "../components/lista.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout paginaTitulo="| Socios comerciales" paginaDescripcion="Nuestros socios comerciales incluyen empresas reconocidas como Cargill Sociedad Anónima, PACSA, ARMEX, AARFS Asociación Civil, entre otros.">
+    <Lista
+        titulo="Nuestros socios comerciales"
+        elementos={[
+            "Cargill Sociedad Anónima",
+            "PACSA",
+            "ARMEX",
+            "AARFS Asociación Civil",
+            "BODEGAS ALFER",
+            "GRANISSA S.A. DE C.V.",
+            "AARC del Rio Culiacan A.C",
+            "Grupo Terminel",
+        ]}
+    />
+</Layout>

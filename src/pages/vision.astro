@@ -1,0 +1,16 @@
+---
+import Lista from "../components/lista.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout paginaTitulo="| Visión" paginaDescripcion="Nuestra visión se basa en ser líder en la compra, venta y distribución de granos y semillas básicas, asegurando fomentar la responsabilidad social y el desarrollo sostenible.">
+    <Lista
+        titulo="Visión"
+        elementos={[
+            "Ser líder de influencia en la compra, venta y distribución de granos y semillas básicas para consumo humano y pecuario.",
+            "Desarrollar el sentido de responsabilidad social y empresarial.",
+            "Impulsar el crecimiento orgánico de empleos y economía local.",
+            "Crear oportunidades de negocios sostenido con mejoras sustentables.",
+        ]}
+    />
+</Layout>

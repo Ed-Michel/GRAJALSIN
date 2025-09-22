@@ -1,0 +1,8 @@
+---
+import Lista from "../components/lista.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout paginaTitulo="| Productos | Otros productos" paginaDescripcion="Ofrecemos una variedad de productos adicionales como trigo, sorgo, lentejas, entre otros.">
+    <Lista titulo="Otros productos" elementos={["Trigo", "Sorgo", "Lenteja"]} />
+</Layout>

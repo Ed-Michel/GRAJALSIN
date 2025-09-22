@@ -1,0 +1,16 @@
+---
+import Tarjeta from "../components/tarjeta.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout paginaTitulo="| Productos | Frijol" paginaDescripcion="El frijol es una de las luguminosas más importantes para el consumo humano, ya que es una fuente esencial de proteínas y minerales vegetales.">
+    <Tarjeta
+        titulo="Frijol"
+        descripcion={`El frijol es una de las luguminosas más importantes para el consumo humano, ya que es una fuente esencial de proteínas y 
+                minerales vegetales. Nuestro campo sinaloense produce distintas variedades, entre ellos el peruano, reina, higuera o pinto, 
+                los cuales forman parte de la dieta diaria del pueblo mexicano.
+                <br/>
+                Cabe destacar que una ración de 90 g de frijoles cocidos aporta 8 g de proteína, casi el 15% del consumo diario recomendado 
+                para un adulto de 70 kg.`}
+    />
+</Layout>

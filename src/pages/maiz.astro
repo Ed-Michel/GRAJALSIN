@@ -1,0 +1,19 @@
+---
+import Tarjeta from "../components/tarjeta.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout paginaTitulo="| Productos | Maíz" paginaDescripcion="Es uno de los productos de más alto consumo en México por cultura y tradición lo que lo convierte en un producto de la canasta básica imprescindible.">
+    <Tarjeta
+        titulo="Maíz Blanco Sinaloa"
+        descripcion={`Este grano está reconocido a nivel nacional e internacional por su calidad principalmente por ser un producto 
+                no transgénico, apto para consumo humano principalmente en la industria de la masa y la tortilla.
+                <br/>
+                Es uno de los productos de más alto consumo en México por cultura y tradición lo que lo convierte en un producto de la 
+                canasta básica imprescindible.
+                <br/>
+                Posee altos contenido de hidratos de carbono de fácil digestión, lo convierten en un alimento ideal para los niños y los 
+                deportistas. Aconsejable en personas con deficiencia de magnesio. Su harina es idónea cuando existen problemas de alergia 
+                o intolerancia al gluten.`}
+    />
+</Layout>
