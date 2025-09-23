@@ -1,29 +1,42 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
 ---
 
-<Layout paginaTitulo="" paginaDescripcion="Nos dedicamos a la venta de granos como el maíz, frijol y garbanzo; ofreciendo productos de alta calidad y servicios excepcionales a nuestros clientes.">
-  <nav>
-    <ul class="nav-links">
-      <li><a href="/nosotros">Nosotros</a></li>
-      <li><a href="/mision">Misión</a></li>
-      <li><a href="/vision">Visión</a></li>
-      <li><a href="/valores">Valores</a></li>
-      <li><a href="/productos">Productos</a></li>
-      <li><a href="/contactos">Contactos</a></li>
-      <li><a href="/socios">Socios comerciales</a></li>
-    </ul>
-  </nav>
+<Layout
+  paginaTitulo=""
+  paginaDescripcion="Nos dedicamos a la venta de granos como el maíz, frijol y garbanzo; ofreciendo productos de alta calidad y servicios excepcionales a nuestros clientes."
+>
+  <header class="bg-white shadow fixed w-full top-0 z-50 h-36">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center h-full relative">
+          
+          <div class="absolute left-6 top-1/2 transform -translate-y-1/2">
+            <a href="/">
+                <img id="Logo" src="/logo.png" alt="Logo GRAJALSIN" class="h-38 w-auto mt-6"/>
+            </a>
+          </div>
 
-  <div class="logo">
-    <a href="/">
-      <img id="Logo" src="/logo.png" alt="Logo GRAJALSIN" />
-    </a>
-    <p id="Eslogan">LO MEJOR DE NUESTRA TIERRA SINALOENSE</p>
-  </div>
+      <nav class="flex-grow flex justify-center items-center">
+        <ul class="flex space-x-12 font-bold items-center">
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 GRAJALSIN SPR DE RL - Todos los derechos reservados.</p>
-  </footer>
+          <li><a href="/nosotros" class="hover:text-green-600">Nosotros</a></li>
+          <li><a href="/mision" class="hover:text-green-600">Misión</a></li>
+          <li><a href="/vision" class="hover:text-green-600">Visión</a></li>
+          <li><a href="/valores" class="hover:text-green-600">Valores</a></li>
+          <li>
+            <a href="/productos" class="hover:text-green-600">Productos</a>
+          </li>
+          <li>
+            <a href="/contactos" class="hover:text-green-600">Contactos</a>
+          </li>
+          <!-- <li><a href="/socios">Socios comerciales</a></li> -->
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flex flex-col items-center justify-center min-h-screen mt-[-320px]">
+      <p id="Slogan" class="text-center text-2xl font-semibold">LO MEJOR DE NUESTRA TIERRA SINALOENSE</p>
+    </div>
+  </header>
 </Layout>
