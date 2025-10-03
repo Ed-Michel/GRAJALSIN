@@ -2,15 +2,17 @@
 import Tarjeta from "../components/tarjeta.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Nav from "../layouts/Nav.astro";
 ---
 
 <Layout paginaTitulo="| Productos | Garbanzo" paginaDescripcion="Considerado producto estrella en los mercados internacionales, la variedad del garbanzo blanco Sinaloa es reconocida por su alto nivel de calidad y de gusto por los extranjeros.">
+    <Nav/>
     <Tarjeta
         titulo="Garbanzo Blanco Sinaloa"
         descripcion={`Considerado producto estrella en los mercados internacionales, la variedad del garbanzo blanco Sinaloa es reconocida 
                 por su alto nivel de calidad y de gusto por los extranjeros.
                 <br/>
-                El garbanzo contiene fibra, potasio, vitamina C , vitamina B-6, vitamina K, hierro, fosfato, calcio, magnesio, manganeso, 
+                El garbanzo contiene fibra, potasio, vitamina C, vitamina B-6, vitamina K, hierro, fosfato, calcio, magnesio, manganeso, 
                 zinc; las cuales contribuyen a la construcción y mantenimiento de la estructura y la resistencia ósea, ayuda a la salud de 
                 nuestro sistema cardiovascular y al hígado.
                 <br/>

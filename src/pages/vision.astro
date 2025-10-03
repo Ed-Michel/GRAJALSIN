@@ -2,9 +2,11 @@
 import Lista from "../components/lista.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Nav from "../layouts/Nav.astro";
 ---
 
 <Layout paginaTitulo="| Visión" paginaDescripcion="Nuestra visión se basa en ser líder en la compra, venta y distribución de granos y semillas básicas, asegurando fomentar la responsabilidad social y el desarrollo sostenible.">
+    <Nav/>
     <Lista
         titulo="Visión"
         elementos={[

@@ -17,15 +17,15 @@ const { paginaTitulo, paginaDescripcion } = Astro.props;
         <meta name="description" content={paginaDescripcion} />
         <title>GRAJALSIN {paginaTitulo}</title>
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="icon" href="/logo.png" type="image/x-icon" />
+        <link rel="icon" href="/logo.png" type="image/x-icon"/>
     </head>
-    <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 m-0 p-0">
+    <body class="flex flex-col min-h-screen bg-gray-50 text-gray-800 overflow-x-hidden w-full">
         <!-- Contenido principal -->
-        <main class="flex-grow pt-16 pb-10 mb-0">
+        <main class="flex-grow pt-16 pb-10 mb-0 w-full">
             <slot />
         </main>
         <!-- Footer -->
-        <footer class="bg-green-600 text-white text-center py-6 font-bold mt-auto mb-0">
+        <footer class="bg-green-600 text-white text-center py-6 font-bold mt-auto mb-0 w-full">
             <p>
                 &copy; 2025 GRAJALSIN SPR DE RL - Todos los derechos reservados.
             </p>
