@@ -2,9 +2,11 @@
 import Contacto from "../components/contactos.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Nav from "../layouts/Nav.astro";
 ---
 
 <Layout paginaTitulo="| Contactos" paginaDescripcion="Ponte en contacto con nosotros para cualquier consulta o información adicional sobre nuestros productos y servicios. Estamos aquí para ayudarte.">
+    <Nav/>
     <Contacto
         titulo="Contáctanos"
         tituloDos="Gerencia comercial"

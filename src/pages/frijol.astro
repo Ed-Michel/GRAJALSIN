@@ -2,12 +2,14 @@
 import Tarjeta from "../components/tarjeta.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Nav from "../layouts/Nav.astro";
 ---
 
 <Layout paginaTitulo="| Productos | Frijol" paginaDescripcion="El frijol es una de las luguminosas más importantes para el consumo humano, ya que es una fuente esencial de proteínas y minerales vegetales.">
+    <Nav/>
     <Tarjeta
         titulo="Frijol"
-        descripcion={`El frijol es una de las luguminosas más importantes para el consumo humano, ya que es una fuente esencial de proteínas y 
+        descripcion={`El frijol es una de las leguminosas más importantes para el consumo humano, ya que es una fuente esencial de proteínas y 
                 minerales vegetales. Nuestro campo sinaloense produce distintas variedades, entre ellos el peruano, reina, higuera o pinto, 
                 los cuales forman parte de la dieta diaria del pueblo mexicano.
                 <br/>

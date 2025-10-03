@@ -2,9 +2,11 @@
 import Lista from "../components/opciones.astro";
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Nav from "../layouts/Nav.astro";
 ---
 
 <Layout paginaTitulo="| Productos" paginaDescripcion="Ofrecemos una variedad de productos de alta calidad incluyendo: maíz, garbanzo, frijol y entre otros granos.">
+    <Nav/>
     <Lista
         titulo="Principales productos que ofrecemos"
         elementos={["Maíz ", "Garbanzo ", "Frijol ", "Otros productos"]}
