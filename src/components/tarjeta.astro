@@ -9,7 +9,7 @@ const { titulo, descripcion, imagenUrl } = Astro.props;
 ---
 
 <div class = "tarjeta">
-    <h2>{titulo}</h2>
-    <p set:html={descripcion}></p>
+    <h2 class="text-black">{titulo}</h2>
+    <p class="text-black" set:html={descripcion}></p>
     {imagenUrl && <img src={imagenUrl} alt={titulo} />}
 </div>

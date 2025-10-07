@@ -9,8 +9,8 @@ const { titulo, elementos, imagenUrl } = Astro.props;
 ---
 
 <div>
-    <h2>{titulo}</h2>
-    <ul>
+    <h2 class="text-black">{titulo}</h2>
+    <ul class="text-black">
         {elementos.map(item => (
             <li>{item}</li>
         ))}

@@ -1,3 +1,7 @@
+---
+import Li from "../layouts/Li.astro";
+---
+
 <div class="bg-green-600 w-full h-40">
     <div class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between relative">
         <div class="absolute left-1 top-1/2 transform -translate-y-1/2 mt-5">
@@ -16,19 +20,13 @@
                 class="flex space-x-13 font-bold items-center text-lg"
                 style="font-family: Helvetica, Arial, sans-serif;"
             >
-                <li>
-                    <a href="/nosotros" class="hover:text-yellow-200">Nosotros</a>
-                </li>
-                <li><a href="/mision" class="hover:text-yellow-200">Misión</a></li>
-                <li><a href="/vision" class="hover:text-yellow-200">Visión</a></li>
-                <li><a href="/valores" class="hover:text-yellow-200">Valores</a></li>
-                <li>
-                    <a href="/productos" class="hover:text-yellow-200">Productos</a>
-                </li>
-                <li>
-                    <a href="/contactos" class="hover:text-yellow-200">Contactos</a>
-                </li>
-                <!-- <li><a href="/socios">Socios comerciales</a></li> -->
+                <Li texto="Nosotros"></Li>
+                <Li texto="Mision"></Li>
+                <Li texto="Vision"></Li>
+                <Li texto="Valores"></Li>
+                <Li texto="Productos"></Li>
+                <Li texto="Contactos"></Li>
+                <!-- <Li texto="Socios"></Li> -->
             </ul>
             <div>
                 <a

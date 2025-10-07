@@ -16,19 +16,75 @@ const { paginaTitulo, paginaDescripcion } = Astro.props;
         <meta name="author" content="Edgar Michel Pérez Ramírez" />
         <meta name="description" content={paginaDescripcion} />
         <title>GRAJALSIN {paginaTitulo}</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="icon" href="/logo2.png" type="image/x-icon"/>
+        <link rel="icon" href="/logo2.png" type="image/x-icon" />
     </head>
-    <body class="flex flex-col min-h-screen text-white overflow-x-hidden w-full">
+    <body
+        class="flex flex-col min-h-screen text-white overflow-x-hidden w-full"
+    >
         <!-- Contenido principal -->
         <main class="flex-grow mb-0 w-full">
             <slot />
         </main>
         <!-- Footer -->
-        <footer class="bg-green-600 text-white text-center py-6 font-bold mt-auto mb-0 w-full">
-            <p>
-                &copy; 2025 GRAJALSIN SPR DE RL - Todos los derechos reservados.
-            </p>
+        <footer
+            class="bg-green-600 text-white font-bold w-full flex flex-col md:flex-row items-center justify-between px-8 py-4"
+        >
+            <div class="text-center mb-4 md:mb-0">
+                <p
+                    class="text-lg mb-2"
+                    style="font-family: Helvetica, Arial, sans-serif;"
+                >
+                    Dirección:
+                </p>
+                <p
+                    class="text-sm"
+                    style="font-family: Helvetica, Arial, sans-serif;"
+                >
+                    Av. Marchal, Fracc. Granadas,
+                </p>
+                <p
+                    class="text-sm"
+                    style="font-family: Helvetica, Arial, sans-serif;"
+                >
+                    Culiacán, Sinaloa, C.P. 80058.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <img
+                    id="Logo"
+                    src="/logo2.png"
+                    alt="Logo GRAJALSIN"
+                    class="h-30 w-auto mb-2"
+                />
+                <p
+                    class="text-sm text-center"
+                    style="font-family: Helvetica, Arial, sans-serif;"
+                >
+                    &copy; 2025 GRAJALSIN SPR DE RL - Todos los derechos
+                    reservados.
+                </p>
+            </div>
+            <div class="text-center mt-4 md:mt-0">
+                <p
+                    class="text-lg mb-2"
+                    style="font-family: Helvetica, Arial, sans-serif;"
+                >
+                    Horario de atención:
+                </p>
+                <p
+                    class="text-sm"
+                    style="font-family: Helvetica, Arial, sans-serif;"
+                >
+                    Lunes a Viernes 9:00 AM - 6:00 PM
+                </p>
+                <p
+                    class="text-sm"
+                    style="font-family: Helvetica, Arial, sans-serif;"
+                >
+                    Sábado 9:00 AM - 1:00 PM
+                </p>
+            </div>
         </footer>
     </body>
 </html>
