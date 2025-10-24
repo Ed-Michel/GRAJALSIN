@@ -1,10 +1,12 @@
 ---
 import Li from "../layouts/Li.astro";
+import LiSub from "../layouts/LiSub.astro";
 ---
 
 <div class="bg-green-600 w-full h-40">
-    <div class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between relative">
-        <div class="absolute left-1 top-1/2 transform -translate-y-1/2 mt-5">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center h-full relative">
+        <!-- Logo -->
+        <div class="absolute left-6 top-1/2 transform -translate-y-1/2">
             <a href="/">
                 <img
                     id="Logo"
@@ -14,17 +16,44 @@ import Li from "../layouts/Li.astro";
                 />
             </a>
         </div>
-
-        <nav class="flex-grow flex justify-center items-center ml-58 mt-12">
+        <!-- Nav -->
+        <nav class="flex-grow flex justify-center items-center ml-90">
             <ul
-                class="flex space-x-13 font-bold items-center text-lg"
+                class="flex space-x-14 font-bold items-center text-lg"
                 style="font-family: Helvetica, Arial, sans-serif;"
             >
-                <Li texto="Nosotros"></Li>
-                <Li texto="Mision"></Li>
-                <Li texto="Vision"></Li>
-                <Li texto="Valores"></Li>
-                <Li texto="Productos"></Li>
+                <!-- Nosotros -->
+                <li class="relative group">
+                    <a href="/nosotros" class="hover:text-yellow-200 relative inline-block mr-19 hover:underline">
+                        Nosotros
+                    </a>
+
+                    <ul
+                        class="absolute left-0 bg-green-600 text-white mt-2 w-35 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all
+                        shadow-lg border-2 border-yellow-200 rounded-md"
+                    > 
+                    <LiSub texto="Misión"></LiSub>
+                    <LiSub texto="Visión"></LiSub>
+                    <LiSub texto="Valores"></LiSub>
+                    </ul>
+                </li>
+
+                <!-- Productos -->
+                <li class="relative group">
+                    <a class="hover:text-yellow-200 relative inline-block mr-16">
+                        Productos
+                    </a>
+
+                    <ul
+                        class="absolute left-0 bg-green-600 text-white mt-2 w-40 z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all 
+                        shadow-lg border-2 border-yellow-200 rounded-md"
+                    >
+                    <LiSub texto="Maíz"></LiSub>
+                    <LiSub texto="Garbanzo"></LiSub>
+                    <LiSub texto="Frijol"></LiSub>
+                    <LiSub texto="Otros Productos"></LiSub>
+                    </ul>
+                </li>
                 <Li texto="Contactos"></Li>
                 <!-- <Li texto="Socios"></Li> -->
             </ul>
@@ -38,7 +67,7 @@ import Li from "../layouts/Li.astro";
                         id="WhatsappIcon"
                         src="/wp.png"
                         alt="Icono de WhatsApp"
-                        class="h-9 w-auto ml-20 rounded-full hover:scale-110 hover:border-3 hover:border-green-500 transition-transform duration-300 cursor-pointer border-0 object-cover"
+                        class="h-9 w-auto ml-35 rounded-full hover:scale-110 hover:border-3 hover:border-green-500 transition-transform duration-300 cursor-pointer border-0 object-cover"
                     />
                 </a>
             </div>
@@ -52,7 +81,7 @@ import Li from "../layouts/Li.astro";
                         id="FacebookIcon"
                         src="/fb.png"
                         alt="Icono de Facebook"
-                        class="h-9 w-auto ml-12 rounded-full hover:scale-110 hover:border-3 hover:border-blue-600 transition-transform duration-300 cursor-pointer border-0 object-cover"
+                        class="h-9 w-auto ml-14 rounded-full hover:scale-110 hover:border-3 hover:border-blue-600 transition-transform duration-300 cursor-pointer border-0 object-cover"
                     />
                 </a>
             </div>
@@ -61,7 +90,7 @@ import Li from "../layouts/Li.astro";
                     id="PhoneIcon"
                     src="/tel.png"
                     alt="Icono de Teléfono"
-                    class="h-9 w-auto ml-10 rounded-full hover:scale-110 hover:border-3 hover:border-black transition-transform duration-300 cursor-pointer border-0 object-cover"
+                    class="h-9 w-auto ml-11 rounded-full hover:scale-110 hover:border-3 hover:border-black transition-transform duration-300 cursor-pointer border-0 object-cover"
                 />
             </div>
             <div

@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+ul[class*="group-hover:visible"] {
+  transform-origin: top;
+  animation: dropdown-fade 0.2s ease-out;
+}
+
+@keyframes dropdown-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

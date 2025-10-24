@@ -1,0 +1,16 @@
+---
+interface Props {
+  texto: string;
+}
+
+const { texto } = Astro.props;
+const href = "/" + texto.toLowerCase().replace(/\s+/g, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+---
+
+
+<li class="hover:bg-green-700">
+    <a href={href}
+    class="hover:text-yellow-200 relative group inline-block ml-3 py-2.5 hover:underline text-base">
+    {texto}
+    </a>
+</li>

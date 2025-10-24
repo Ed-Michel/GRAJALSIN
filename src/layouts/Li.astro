@@ -4,16 +4,13 @@ interface Props {
 }
 
 const { texto } = Astro.props;
-const href = "/" + texto.toLowerCase();
+const href = "/" + texto.toLowerCase().replace(/\s+/g, '');
 ---
 
 
 <li>
     <a href={href}
-    class="hover:text-yellow-200 relative group inline-block">
+    class="hover:text-yellow-200 relative group inline-block hover:underline">
     {texto}
-        <span 
-            class="absolute top-full left-0 w-0 h-1 bg-yellow-200 transition-all group-hover:w-full">
-        </span>
     </a>
 </li>
